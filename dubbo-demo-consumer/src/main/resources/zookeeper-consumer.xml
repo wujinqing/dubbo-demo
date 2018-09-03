@@ -8,8 +8,8 @@
     <!-- consumer's application name, used for tracing dependency relationship (not a matching criterion),
     don't set it same as provider -->
     <dubbo:application name="demo-consumer"/>
-    <!-- use multicast registry center to discover service -->
-    <dubbo:registry address="multicast://224.5.6.7:1234"/>
+    <!-- use zookeeper registry center to discover service -->
+    <dubbo:registry group="dubbo" client="zkclient" address="zookeeper://localhost:2181"/>
 
     <dubbo:monitor />
     <!-- generate proxy for the remote service, then demoService can be used in the same way as the

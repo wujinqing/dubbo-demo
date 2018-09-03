@@ -28,7 +28,9 @@ subprojects{
                 'org.apache.logging.log4j:log4j-api:2.8',
                 'org.apache.logging.log4j:log4j-core:2.8',
                 'org.apache.logging.log4j:log4j-slf4j-impl:2.8',
-                'org.slf4j:slf4j-api:1.7.21'
+                'org.slf4j:slf4j-api:1.7.21',
+                'org.apache.zookeeper:zookeeper:3.3.3',
+                'com.github.sgroschupf:zkclient:0.1'
         )
 
         // 测试依赖
